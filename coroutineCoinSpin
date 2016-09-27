@@ -8,8 +8,9 @@ public class CoinMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start ()
-    {
-	    StartCoroutine (Spin());
+    	{
+		transform.Rotate(transform.up, Random.Range(0f, 360f)); //sets coins to rotate at slightly different intervals
+	    	StartCoroutine (Spin());
 	}
 
     private IEnumerator Spin()
